@@ -1,0 +1,16 @@
+t = int(input())
+for _ in range(t):
+   n = int(input())
+   arr = list(map(int,input().split()))
+   arr.sort()
+   if n%2==0:
+      mididx = (n//2)-1
+      midval = arr[mididx]
+   else:
+      mididx = n//2
+      midval = arr[mididx]
+   count = 0
+   for i in range(mididx,n):
+      if arr[i] == midval:
+         count = count+1 
+   print(count)
