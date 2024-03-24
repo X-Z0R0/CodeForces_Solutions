@@ -1,0 +1,9 @@
+n = int(input())
+tas = 0
+for _ in range(n):
+    m = input()
+    if m == '++X' or m=='X++':
+        tas = tas+1
+    else:
+        tas=tas-1
+print(tas)
