@@ -1,0 +1,6 @@
+n = int(input())
+num = list(set(map(int,input().split())))
+if num[0] == 0 and len(num) == 1:
+    print('easy')
+    exit()
+print('hard')
