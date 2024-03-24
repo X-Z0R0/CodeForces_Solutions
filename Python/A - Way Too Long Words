@@ -1,0 +1,7 @@
+t = int(input())
+for _ in range(t):
+    m = input()
+    n = len(m)
+    if n > 10:
+        m = m[0] + str(n-2) + m[n-1]
+    print(m)
