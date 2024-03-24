@@ -1,0 +1,7 @@
+s = input()
+t = input()
+ns = s[::-1]
+if ns == t:
+    print("YES")
+    exit()
+print("NO")
