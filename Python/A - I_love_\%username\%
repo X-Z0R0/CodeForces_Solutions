@@ -1,0 +1,12 @@
+n = int(input())
+p = list(map(int, input().split()))
+count = 0
+max_ , min_ = p[0],p[0]
+for i in p:
+    if i > max_:
+        max_ = i
+        count = count + 1 
+    if i < min_:
+        min_ = i
+        count = count + 1 
+print(count)
