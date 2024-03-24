@@ -1,0 +1,17 @@
+t = int(input())
+for _ in range(t):
+    s = input()
+    count = 0
+    i = 0
+    while i<(len(s)-1):
+        if (s[i] =='1' and s[i+1] == '0') or (s[i] == '0' and s[i+1] == '1'):
+            s = s.replace(str(s[i]),'',1)
+            s = s.replace(str(s[i]),'',1)
+            count = count + 1
+            i=0
+            continue
+        i = i+1
+    if count%2==0:
+        print('NET')
+    else:
+        print('DA')
