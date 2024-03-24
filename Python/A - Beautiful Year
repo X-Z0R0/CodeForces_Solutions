@@ -1,0 +1,8 @@
+y = int(input())
+while True:
+    y = y+1
+    s = list(str(y))
+    s = list(set(s))
+    if len(s) == 4:
+        break
+print(y)
