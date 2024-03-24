@@ -1,0 +1,9 @@
+n = int(input())
+count = 0
+oldmag = ''
+for i in range(n):
+    mag = input()
+    if oldmag != mag:
+        count = count+1 
+    oldmag = mag
+print(count)
