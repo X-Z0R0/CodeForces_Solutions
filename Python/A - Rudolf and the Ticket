@@ -1,0 +1,13 @@
+t = int(input())
+while t:
+    n,m,k = map(int, input().split())
+    an = list(map(int,input().split()))
+    am = list(map(int,input().split()))
+    count = 0
+    for i in an:
+        for j in am:
+            if i+j <= k:
+                count = count+1 
+    print(count)
+    
+    t = t-1
