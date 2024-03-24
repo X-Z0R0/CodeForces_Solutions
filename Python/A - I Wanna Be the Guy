@@ -1,0 +1,10 @@
+n = int(input())
+p = list(map(int, input().split()))
+q = list(map(int, input().split()))
+del p[0]
+del q[0]
+s = list(set(p+q))
+if len(s) < n:
+    print("Oh, my keyboard!")
+else:
+    print("I become the guy.")
