@@ -1,0 +1,7 @@
+t = int(input())
+for i in range(t):
+    n = int(input())
+    s = input()
+    count = 0
+    count = count + s.count('map') + s.count('pie') - s.count('mapie')
+    print(count)
