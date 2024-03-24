@@ -1,0 +1,5 @@
+m  = int(input())
+if m>3 and m%2==0:
+    print('YES')
+    exit()
+print("NO")
