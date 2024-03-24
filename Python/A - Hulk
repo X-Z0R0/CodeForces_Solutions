@@ -1,0 +1,8 @@
+n = int(input())
+s = 'I hate'
+for i in range(n-1):
+    if i%2==0:
+        s = s+' that I love'
+    else:
+        s = s+' that I hate'
+print(s + ' it')
