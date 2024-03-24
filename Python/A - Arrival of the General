@@ -1,0 +1,16 @@
+n = int(input())
+p = list(map(int,input().split()))
+max_ = max(p)
+min_ = min(p)
+for i in range(n):
+    if max_ == p[i]:
+        maxindex = i
+        break
+for j in range(n):
+    if min_ == p[j]:
+        minindex = j
+if minindex > maxindex:
+    r = (n-minindex) + (maxindex-1)
+else:
+    r = (n-minindex) + (maxindex-2)
+print(r)
