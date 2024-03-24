@@ -1,0 +1,9 @@
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    s = input()
+    ns = s[::-1]
+    if s <= ns:
+        print(s)
+    if ns < s:
+        print(ns+s)
