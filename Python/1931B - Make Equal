@@ -1,0 +1,21 @@
+t = int(input())
+for _ in range(t):
+   n = int(input())
+   w = list(map(int, input().split()))
+   avg = sum(w)//n
+   contain = 0
+   flag = True
+   for i in range(n):
+      if w[i] > avg:
+         contain = contain + abs(avg-w[i])
+         w[i] = avg
+      elif w[i] < avg:
+         contain = contain - (avg - w[i])
+         w[i] = avg
+         if contain < 0:
+            flag = False
+            break
+   if flag:
+      print('Yes')
+   else:
+      print('NO')
