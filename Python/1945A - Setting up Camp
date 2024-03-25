@@ -1,0 +1,25 @@
+t = int(input())
+for _ in range(t):
+   a,b,c = map(int,input().split())
+   flag = False
+   if b%3 != 0 and 3-b%3 > c:
+      print(-1)
+   elif b%3 == 0:
+      flag = True
+      total = a
+      total = total + b//3
+      if c%3 == 0:
+         total = total + c//3
+      else:
+         total = total + c//3 + 1
+   else:
+      total = a
+      flag = True
+      total = total +  b//3 + 1
+      c = c - (3-b%3)
+      if c%3 == 0:
+         total = total + c//3
+      else:
+         total = total + c//3 + 1
+   if flag:
+      print(total)
