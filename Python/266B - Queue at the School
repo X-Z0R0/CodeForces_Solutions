@@ -1,0 +1,14 @@
+n , t = map(int, input().split())
+s = list(input())
+for i in range(t):
+   flag = 2
+   for j in range(n-1):
+      if flag == 3:
+         flag = 2
+         continue
+      if s[j] == 'B' and s[j+1] == 'G':
+         s[j] = 'G'
+         s[j+1] = 'B'
+         flag = 3
+for i in s:
+   print(i, end='')
