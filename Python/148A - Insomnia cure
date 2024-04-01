@@ -1,0 +1,21 @@
+
+k,l,m,n,d = int(input()),int(input()),int(input()),int(input()),int(input())
+lis = []
+i=1
+while i*k <= d:
+   lis.append(k*i)
+   i = i+1
+i = 1
+while i*l <= d:
+   lis.append(l*i)
+   i = i+1
+i = 1
+while i*m <= d:
+   lis.append(m*i)
+   i = i+1
+i = 1
+while i*n <= d:
+   lis.append(n*i)
+   i = i+1
+lis = list(set(lis))
+print(len(lis))
