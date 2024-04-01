@@ -1,0 +1,9 @@
+n = int(input())
+s = input()
+s = s.lower()
+s = list(set(list(s)))
+l = len(s)
+if l < 26:
+   print('no')
+else:
+   print("yes")
