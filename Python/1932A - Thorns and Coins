@@ -1,0 +1,12 @@
+
+t = int(input())
+for _ in range(t):
+   n = int(input())
+   s = input()
+   count = 0
+   for i in range(n):
+      if s[i] == '@':
+         count = count+1
+      elif i<n-1 and s[i]=='*' and s[i+1]=='*':
+         break
+   print(count)
