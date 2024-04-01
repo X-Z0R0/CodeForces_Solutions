@@ -1,0 +1,15 @@
+r1 = list(map(int, input().split()))
+r2 = list(map(int, input().split()))
+r3 = list(map(int, input().split()))
+r4 = list(map(int, input().split()))
+r5 = list(map(int, input().split()))
+count = 0
+if 1 in r1 or 1 in r5:
+   count = count+2
+elif 1 in r2 or 1 in r4:
+   count = count + 1
+if 1 == r1[0] or 1 == r2[0] or 1 == r3[0] or 1 == r4[0] or 1 == r5[0] or 1 == r1[4] or 1 == r2[4] or 1 == r3[4] or 1 == r4[4] or 1 == r5[4]:
+   count = count+2
+elif 1 == r1[1] or 1 == r2[1] or 1 == r3[1] or 1 == r4[1] or 1 == r5[1] or 1 == r1[3] or 1 == r2[3] or 1 == r3[3] or 1 == r4[3] or 1 == r5[3]:
+   count = count+1
+print(count)
