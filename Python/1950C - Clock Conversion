@@ -1,0 +1,14 @@
+def convert_to_12_hour(time_24_hour):
+    hour, minute = map(int, time_24_hour.split(':'))
+    period = 'AM' if hour < 12 else 'PM'
+    hour = hour % 12
+    if hour == 0:
+        hour = 12
+    time_12_hour = f"{hour:02d}:{minute:02d} {period}"
+    return time_12_hour
+ 
+t = int(input())
+for _ in range(t):
+    time_24_hour = input()
+    time_12_hour = convert_to_12_hour(time_24_hour)
+    print(time_12_hour)
