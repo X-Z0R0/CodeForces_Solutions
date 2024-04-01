@@ -1,0 +1,9 @@
+s = list(input())
+s.remove('{')
+s.remove('}')
+s = list(set(s))
+if ' ' in s:
+   s.remove(' ')
+if ',' in s:
+   s.remove(',')
+print(len(s))
